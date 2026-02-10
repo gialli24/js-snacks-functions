@@ -21,7 +21,7 @@ const startLetters = (arr, filterChar) => {
     const filteredArray = [];
 
     for (const str of arr) { 
-        if (str[0] === filterChar) {
+        if (str.startsWith(filterChar)) {
             filteredArray.push(str);
         }
     }
