@@ -4,7 +4,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+/* 
 function filterByStartLetter(arr, filterChar) {
+    const filteredArray = [];
+
+    for (const str of arr) { 
+        if (str[0] === filterChar) {
+            filteredArray.push(str);
+        }
+    }
+
+    return filteredArray;
+} */
+
+const startLetters = (arr, filterChar) => {
     const filteredArray = [];
 
     for (const str of arr) { 
@@ -17,7 +30,8 @@ function filterByStartLetter(arr, filterChar) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-const namesStartingWithA = filterByStartLetter(names, "A");
+/* const namesStartingWithA = filterByStartLetter(names, "A"); */
+const namesStartingWithA = startLetters(names, "A");
 console.log(namesStartingWithA);
 
 
