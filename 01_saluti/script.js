@@ -4,10 +4,20 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
+
+/* 
 function greetPerson(person) {
     return "ciao " + person;
 }
+*/
 
+/* 
+const greetPerson = (userName) => {
+    return `ciao ${userName}`;
+} 
+*/
+
+const greetPerson = userName => `ciao ${userName}`;
 
 // Invoca la funzione qui e stampa il risultato in console
 const message = greetPerson(userName);
