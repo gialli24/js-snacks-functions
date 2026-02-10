@@ -9,9 +9,26 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function getGreetPersonAtHour(name) {
+    const hour = new Date().getHours();
+
+    if (hour < 13) {
+        return "buongiorno " + name;
+    }
+
+    if (hour > 13 && hour < 17) {
+        return "buon pomeriggio " + name;
+    }
+
+    if (hour > 17) {
+        return "buonasera " + name;
+    }
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+const message = getGreetPersonAtHour(name);
+console.log(message);
 
 
 
